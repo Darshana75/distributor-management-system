@@ -1,4 +1,40 @@
--- phpMyAdmin SQL Dump
+CREATE TABLE `logs` (
+  `id` int(11) NOT NULL,
+  `log_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `log_description` text NOT NULL,
+  `log_type` varchar(20) NOT NULL,
+  `added_by` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `logs`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `logs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;CREATE TABLE `logs` (
+  `id` int(11) NOT NULL,
+  `log_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `log_description` text NOT NULL,
+  `log_type` varchar(20) NOT NULL,
+  `added_by` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `logs`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `logs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;CREATE TABLE `logs` (
+  `id` int(11) NOT NULL,
+  `log_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `log_description` text NOT NULL,
+  `log_type` varchar(20) NOT NULL,
+  `added_by` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `logs`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `logs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;-- phpMyAdmin SQL Dump
 -- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
