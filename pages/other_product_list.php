@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Total factory Product List</h3>
+                    <h3 class="card-title">Total Factory Product List</h3>
                     <a href="index.php?page=add_other_product" target="_blank" class="btn btn-primary btn-sm float-right rounded-0" style="margin:8px;"><i class="fas fa-plus"></i> New Product</a>
                   </div>
                   
@@ -33,8 +33,8 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>product Id</th>
-                            <th>Product name</th>
+                            <th>Product Id</th>
+                            <th>Product Name</th>
                             <th>Brand</th>
                             <th>Category</th>
                             <th>quantity</th>

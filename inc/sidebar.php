@@ -32,7 +32,7 @@
 
       <li class="nav-item">
         <a href="index.php?page=dashboard" class="nav-link <?php echo $actual_link=='dashboard'?'active':'';?>">
-          <i class="material-symbols-outlined">dashboard</i>
+          <i class="material-symbols-outlined">Dashboard</i>
           <p>
             Dashboard
           </p>
