@@ -34,6 +34,7 @@
                       </button>
                     </div>
                 <form id="addProduct">
+                          
                           <div class="row">
                           <div class="col-md-6 ">
                             <div class="form-group">
@@ -48,7 +49,12 @@
                           </div>
                          </div>
                        </div>
-                        
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="product_id">Product ID * :</label>
+                               <input type="text" class="form-control" id="product_id" placeholder="Product ID" name="product_id">
+                              </div>
+                            </div>
                           <div class="row">
                             <div class="col-md-6">
                                <div class="form-group">

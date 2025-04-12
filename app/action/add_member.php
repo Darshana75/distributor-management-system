@@ -9,9 +9,16 @@
 		$email = $_POST['email'];
 		$cus_open_blacnce = $_POST['cus_open_blacnce'];
 		$reg_date = $obj->convertDateMysql($_POST['reg_date']);
-	    $get_m_name = "C".time();
-
+	    //$get_m_name = "C".time(); // (Auto generate member code)
+		$get_m_name = $_POST['member_id']; // (custom generate member code)
 		if (!empty($name)) {
+
+			$check = $obj->find('member', 'member_id', $get_m_name);
+			if ($check) {
+				echo "This Member ID already exists. Please use a unique ID.";
+				exit;
+			}
+			
 			$query = array(
 				'member_id' => $get_m_name,
 				'name' => $name,

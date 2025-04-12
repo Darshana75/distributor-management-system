@@ -4,7 +4,9 @@
 
 	if (isset($_POST)) {
 		$product_name = $_POST['product_name'];
-		$product_code = "P".time();
+		// $product_code = "P".time();  (Auto generate product code)
+		$product_code = $_POST['product_id'];
+		// $product_code = $_POST['product_id'];	
 		$brand = $_POST['brand'];
 		$p_catagory = $_POST['p_catagory'];
 		// find catagory name 
@@ -19,6 +21,13 @@
 
 		if (!empty($product_name) && !empty($brand) && !empty($p_catagory) && !empty($product_source) && !empty($alert_quantity)) {
 			// prodcut add query 
+
+			$check = $obj->find('products', 'product_id', $product_code);
+			if ($check) {
+				echo "This Product ID already exists. Please use a unique ID.";
+				exit;
+			}
+			
 			$query = array(
 				'product_name'	 => $product_name,				
 				'product_id'	 => $product_code,				

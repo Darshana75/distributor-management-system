@@ -54,10 +54,8 @@ CREATE TABLE `catagory` (
 --
 
 INSERT INTO `catagory` (`id`, `name`, `description`, `created_by`, `update_at`, `create_at`) VALUES
-(1, 'Processors', 'A processor (CPU) is the logic circuitry that responds to and processes the basic instructions that drive a computer. The CPU is seen as the main and most crucial integrated circuitry (IC) chip in a c', 1, NULL, '2023-07-21 12:29:08'),
-(2, 'Motherboards', 'A motherboard (also called mainboard, main circuit board, MB, mboard, backplane board, base board, system board, mobo; or in Apple computers logic board)', 1, NULL, '2023-07-21 12:29:35'),
-(3, 'RAM (Memory)', 'Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code.', 1, NULL, '2023-07-21 12:37:27');
-
+(1, 'biscuit', 'All types of buscut products', 1, NULL, NOW()),
+(2, 'Beverage', 'All types of beverages and drinks', 1, NULL, NOW());
 -- --------------------------------------------------------
 
 --
@@ -149,6 +147,9 @@ CREATE TABLE `invoice` (
   `last_update` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ALTER TABLE `invoice` 
+MODIFY COLUMN `id` INT(11) NOT NULL AUTO_INCREMENT,
+ADD PRIMARY KEY (`id`);
 --
 -- Dumping data for table `invoice`
 --
@@ -212,7 +213,7 @@ ADD PRIMARY KEY (`id`);
 --
 
 INSERT INTO `member` (`id`, `member_id`, `name`, `company`, `address`, `con_num`, `email`, `total_buy`, `total_paid`, `total_due`, `reg_date`, `update_by`, `update_at`, `create_at`) VALUES
-(0, 'C1689940620', 'Nilesh Pandit', 'Nilesh Pandit Pvt Ltd', '2nd floor, Nikhil Pride Building, Lokmanya Bal Gangadhar Tilak Rd, near Kaka Halwai, Pune, Maharasht', '9090909090', 'nilesh@gmail.com', 19000.00, 19000.00, 0.00, '2023-07-21', 1, NULL, '2023-07-21 11:57:00');
+(NULL, 'M001', 'Ksun Dhanajaya', 'Kalawana International', 'Kelin Kanda, Kalawana', '0771234567', 'ksun.dhanajaya@example.com', 15000.00, 10000.00, 5000.00, '2025-04-12', 1, NULL, NOW());
 
 -- --------------------------------------------------------
 
@@ -262,15 +263,18 @@ CREATE TABLE `products` (
   `added_time` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ALTER TABLE `products` 
+MODIFY COLUMN `id` INT(11) NOT NULL AUTO_INCREMENT,
+ADD PRIMARY KEY (`id`);
 --
 -- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id`, `product_name`, `product_id`, `brand_name`, `catagory_id`, `catagory_name`, `product_source`, `sku`, `quantity`, `alert_quanttity`, `buy_price`, `sell_price`, `added_by`, `last_update_at`, `added_time`) VALUES
-(1, 'AMD Ryzen 9 5900X Processor', 'P1689942626', 'Ryzen', 1, 'Processors', 'factory', '456AD5S', 48, 5, '3653', '4500', 1, '2023-07-27', '2023-07-21 12:30:26'),
-(2, 'Intel Core I5-10400 Processor', 'P1689942673', 'Intel', 1, 'Processors', 'factory', 'SDS55S', 0, 5, NULL, NULL, 1, '0000-00-00', '2023-07-21 12:31:13'),
-(3, 'Adata XPG Gammix D30 8GB 3200MHz DDR4 CL16 RAM Memory Module', 'P1689943120', 'XPG', 3, 'RAM (Memory)', 'factory', '2365SDSV', 0, 160, '1839', '2000', 1, '2023-07-19', '2023-07-21 12:38:40');
-
+(NULL, 'Kist Mari 50g', 'P001', 'Kist', 1, 'Biscuit', 'factory', 'SKU-BISC-KM50', 200, 20, 25.00, 35.00, 1, NULL, NOW()),
+(NULL, 'Coca-Cola 500ml', 'P002', 'Coca-Cola', 2, 'Beverage', 'buy', 'SKU-BEV-CC500', 150, 15, 80.00, 100.00, 1, NULL, NOW()),
+(NULL, 'Coca-Cola 200ml', 'P003', 'Coca-Cola', 2, 'Beverage', 'buy', 'SKU-BEV-CC400', 15, 20, 80.00, 100.00, 1, NULL, NOW()),
+(NULL, 'Cream soda 200ml', 'P004', 'elephat-house', 2, 'Beverage', 'buy', 'SKU-BEV-CC600', 10, 20, 100.00, 120.00, 1, NULL, NOW());
 -- --------------------------------------------------------
 
 --
