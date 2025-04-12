@@ -21,19 +21,25 @@ class Objects {
 
 
 	public function create($table, $fields = array()) {
+		// Don't insert primary key if it's auto_increment
+		if (isset($fields['id'])) {
+			unset($fields['id']);
+		}
+	
 		$columns = implode(',', array_keys($fields));
 		$values = ":" . implode(', :', array_keys($fields));
 		$sql = "INSERT INTO {$table}({$columns}) VALUES($values)";
-
+	
 		if ($stmt = $this->pdo->prepare($sql)) {
 			foreach ($fields as $key => $data) {
 				$stmt->bindValue(":" . $key, $data);
 			}
-
+	
 			$stmt->execute();
-			return $this->pdo->lastInsertId();
+			return $this->pdo->lastInsertId(); // correctly returns the auto-generated ID
 		}
 	}
+	
 
 	public function update($table, $colum_name, $id, $fields = array()) {
 		$columns = '';

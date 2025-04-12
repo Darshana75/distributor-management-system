@@ -28,12 +28,12 @@
 			$laset_id = $pdo->query("SELECT LAST_INSERT_ID()");
 			$laset_id = $laset_id->fetchColumn();
 			if ($res) {
-				$add_py_query = array(
-					'cus_id' => $laset_id,
-					'due_blance' => $cus_open_blacnce,
-				);
+				// $add_py_query = array(
+				//	'cus_id' => $laset_id,
+				//	'due_blance' => $cus_open_blacnce,
+				// );
 
-				$res = $obj->create('customer_blance',$add_py_query);
+				// $res = $obj->create('customer_blance',$add_py_query);
 				 echo "yes";
 			}else{
 				echo "Failed to add member. please try again";

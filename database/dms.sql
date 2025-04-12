@@ -186,6 +186,7 @@ INSERT INTO `invoice_details` (`id`, `invoice_no`, `pid`, `product_name`, `price
 -- Table structure for table `member`
 --
 
+
 CREATE TABLE `member` (
   `id` int(11) NOT NULL,
   `member_id` varchar(50) DEFAULT NULL,
@@ -203,12 +204,15 @@ CREATE TABLE `member` (
   `create_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ALTER TABLE `member` 
+MODIFY COLUMN `id` INT(11) NOT NULL AUTO_INCREMENT,
+ADD PRIMARY KEY (`id`);
 --
 -- Dumping data for table `member`
 --
 
 INSERT INTO `member` (`id`, `member_id`, `name`, `company`, `address`, `con_num`, `email`, `total_buy`, `total_paid`, `total_due`, `reg_date`, `update_by`, `update_at`, `create_at`) VALUES
-(1, 'C1689940620', 'Nilesh Pandit', 'Nilesh Pandit Pvt Ltd', '2nd floor, Nikhil Pride Building, Lokmanya Bal Gangadhar Tilak Rd, near Kaka Halwai, Pune, Maharasht', '9090909090', 'nilesh@gmail.com', 19000.00, 19000.00, 0.00, '2023-07-21', 1, NULL, '2023-07-21 11:57:00');
+(0, 'C1689940620', 'Nilesh Pandit', 'Nilesh Pandit Pvt Ltd', '2nd floor, Nikhil Pride Building, Lokmanya Bal Gangadhar Tilak Rd, near Kaka Halwai, Pune, Maharasht', '9090909090', 'nilesh@gmail.com', 19000.00, 19000.00, 0.00, '2023-07-21', 1, NULL, '2023-07-21 11:57:00');
 
 -- --------------------------------------------------------
 
