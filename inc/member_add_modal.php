@@ -20,7 +20,14 @@
                         <form id="adMemberForm">
                           <div class="row">
                             <div class="col-md-6 col-md-6">
-                          <div class="form-group">
+                          <!-- Add this field after the name field -->
+
+                            <div class="form-group">
+                            <label for="member_id">Member ID *:</label>
+                            <input type="text" class="form-control add-member" id="member_id" placeholder="Enter member ID" name="member_id">
+                            </div>
+
+                            <div class="form-group">
                             <label for="name">Name *:</label>
                             <input type="text" class="form-control add-member" id="name" placeholder="Member name" name="name">
                           </div>
