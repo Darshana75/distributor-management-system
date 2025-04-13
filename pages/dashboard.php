@@ -69,7 +69,7 @@
             <div class="info-box bg-secondary ">
               
               <div class="info-box-content">
-                <span class="info-box-text">Total Purchase</span>
+                <span class="info-box-text">Total Invoice</span>
                 <span class="info-box-number"> 
                          <?php  
                       $stmt = $pdo->prepare("SELECT SUM(`purchase_subtotal`) FROM `purchase_products`");
@@ -86,6 +86,30 @@
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+
+
+          <div class="col-xl-3 col-xxl-6 col-sm-6">
+            <div class="info-box bg-success ">
+              
+              <div class="info-box-content">
+                <span class="info-box-text">Today</span>
+                <span class="sell">Sell:
+                    <?php 
+                      $today = date('Y-m-d');
+                        $stmt = $pdo->prepare("SELECT SUM(`net_total`) FROM `invoice` WHERE `order_date` = '$today'");
+                        $stmt->execute();
+                        $res = $stmt->fetch(PDO::FETCH_NUM);
+                        echo $res[0];
+
+                        ?>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+      <span class="info-box-icon elevation-1"><i class="material-symbols-outlined" style="font-size: 36px;">storefront</i></span>
+
+            </div>
+            <!-- /.info-box -->
+          </div>
 
           <!-- fix for small devices only -->
           <div class="clearfix hidden-md-up"></div>
@@ -115,42 +139,6 @@
         <!-- /.row -->
 
 
-        <div class="row">
-          <div class=" col-md-6">
-            <div class="info-box bg-cards-1">
-              <div class="info-box-content  text-center text-white">
-                <h2 class="info-box-text">Today</h2>
-                <span class="sell">Sell:
-                    <?php 
-                      $today = date('Y-m-d');
-                        $stmt = $pdo->prepare("SELECT SUM(`net_total`) FROM `invoice` WHERE `order_date` = '$today'");
-                        $stmt->execute();
-                        $res = $stmt->fetch(PDO::FETCH_NUM);
-                        echo $res[0];
-
-                        ?>
-                    
-                </span><br>
-                <span class="buy">Buy:
-                    <?php 
-                      $today = date('Y-m-d');
-                        $stmt = $pdo->prepare("SELECT SUM(`purchase_net_total`) FROM `purchase_products` WHERE `purchase_date` = '$today'");
-                        $stmt->execute();
-                        $res = $stmt->fetch(PDO::FETCH_NUM);
-                        echo $res[0];
-
-                        ?>
-                </span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-
-          <!-- /.col -->
-         
-          
           <!-- fix for small devices only -->
         <div class="clearfix hidden-md-up"></div>
           
