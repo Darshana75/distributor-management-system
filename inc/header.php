@@ -69,7 +69,6 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 
-
 <div class="wrapper">
   <!-- Page Preloder -->
     <div id="page"></div>
@@ -94,7 +93,10 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 
 <ul class="navbar-nav ml-auto">
   <li class="nav-item d-flex align-items-center">
-    <span id="clock" class="nav-link font-weight-bold text-dark"></span>
+    <span id="clock" class="nav-link font-weight-bold text-dark" style="background-color: #f0f0f0; border-radius: 20px; padding: 5px 15px; box-shadow: 0 0 8px rgba(0,0,0,0.1); transition: all 0.3s;">
+      <i class="far fa-calendar-alt mr-2 text-primary"></i>
+      <span id="clock-text">Loading...</span>
+    </span>
   </li>
 </ul>
 
