@@ -69,6 +69,7 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 
+
 <div class="wrapper">
   <!-- Page Preloder -->
     <div id="page"></div>
@@ -88,6 +89,12 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     <span class="navbar-brand system-title" style="color: gray; font-weight: bold;">
       Distributor Management System
     </span>
+  </li>
+</ul>
+
+<ul class="navbar-nav ml-auto">
+  <li class="nav-item d-flex align-items-center">
+    <span id="clock" class="nav-link font-weight-bold text-dark"></span>
   </li>
 </ul>
 
@@ -119,3 +126,14 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     </ul>
   </nav>
   <!-- /.navbar -->
+  <script>
+  function updateClock() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const time = now.toLocaleTimeString();
+    const date = now.toLocaleDateString('en-US', options);
+    document.getElementById('clock').innerHTML = `${date} | ${time}`;
+  }
+  setInterval(updateClock, 1000);
+  updateClock(); // Initial call
+</script>
