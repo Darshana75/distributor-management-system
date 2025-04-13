@@ -24,8 +24,8 @@
               
                <div class="card">
               <div class="card-header">
-                <h3 class="card-title"><b>DataTable with default features</b></h3>
-                <button type="button" class="btn btn-primary btn-sm float-right rounded-0" data-toggle="modal" data-target=".catagoryModal"><i class="fas fa-plus"></i> catagory</button>
+                <h3 class="card-title"><b>Product 2 Code</b></h3>
+                <button type="button" class="btn btn-primary btn-sm float-right rounded-0" data-toggle="modal" data-target=".catagoryModal"><i class="fas fa-plus"></i> Category </button>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -35,7 +35,7 @@
                       <thead>
                         <tr>
                           <th>SI</th>
-                          <th>Catagory name</th>
+                          <th>Product 2 Code</th>
                           <th>Description</th>
                           <th>Action</th>
                         </tr>

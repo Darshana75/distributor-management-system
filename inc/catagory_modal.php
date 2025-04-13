@@ -18,12 +18,12 @@
                       <form id="addCatForm">
                         <div class="form-group">
                           <div class="form-group">
-                            <label for="cat_name">Category </label>
-                            <input type="text" class="form-control" id="cat_name" name="cat_name" placeholder="Product Catagory name">
+                            <label for="cat_name">Product 2 Code</label>
+                            <input type="text" class="form-control" id="cat_name" name="cat_name" placeholder="Product Name">
                           </div>
                             <div class="form-group">
                             <label for="cat_descrip">Description </label>
-                            <textarea  rows="3" class="form-control" id="cat_descrip" name="cat_descrip" placeholder="product description "></textarea>
+                            <textarea  rows="3" class="form-control" id="cat_descrip" name="cat_descrip" placeholder="Product Description "></textarea>
                           </div>
                           <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block mt-4 rounded-0">Submit</button>

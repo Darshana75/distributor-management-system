@@ -54,7 +54,7 @@ CREATE TABLE `catagory` (
 --
 
 INSERT INTO `catagory` (`id`, `name`, `description`, `created_by`, `update_at`, `create_at`) VALUES
-(1, 'biscuit', 'All types of buscut products', 1, NULL, NOW()),
+(1, 'Biscuit', 'All types of buscut products', 1, NULL, NOW()),
 (2, 'Beverage', 'All types of beverages and drinks', 1, NULL, NOW());
 -- --------------------------------------------------------
 

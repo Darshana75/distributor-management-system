@@ -22,9 +22,9 @@
               <!-- .row -->
                <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title"><b>Add a new product</b></h3>
+                    <h3 class="card-title"><b>Add a New Product</b></h3>
 
-                     <button type="button" class="btn btn-primary btn-sm float-right rounded-0" data-toggle="modal" data-target=".catagoryModal"><i class="fas fa-plus"></i> catagory</button>
+                     <button type="button" class="btn btn-primary btn-sm float-right rounded-0" data-toggle="modal" data-target=".catagoryModal"><i class="fas fa-plus"></i> Category</button>
                   </div>
                   <div class="card-body">
                      <div class="alert alert-primary alert-dismissible fade show addProductError-area" role="alert">
@@ -36,31 +36,37 @@
                 <form id="addProduct">
                           
                           <div class="row">
+
+                          <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="product_id">Product Code :</label>
+                               <input type="text" class="form-control" id="product_id" placeholder="Product ID" name="product_id">
+                              </div>
+                            </div>
+
                           <div class="col-md-6 ">
                             <div class="form-group">
-                            <label for="product_name">Product name * :</label>
+                            <label for="product_name">Descrption :</label>
                             <input type="text" class="form-control" id="product_name" placeholder="Product name" name="product_name">
                           </div>
                          </div>
                           <div class="col-md-6">
                              <div class="form-group">
-                            <label for="brand">Brand Name * :</label>
-                            <input type="text" class="form-control" id="brand" placeholder="Brand name" name="brand">
+                            <label for="brand">Product 1 Code :</label>
+                            <select name="product_1_code" id="product_1_code" class="form-control select2">
+                            <option disabled selected>Select Product 1 Code</option>
+                              <option value="kist">Kist</option>
+                            </select>
                           </div>
                          </div>
                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="product_id">Product ID * :</label>
-                               <input type="text" class="form-control" id="product_id" placeholder="Product ID" name="product_id">
-                              </div>
-                            </div>
+                        
                           <div class="row">
                             <div class="col-md-6">
                                <div class="form-group">
-                                <label for="p_catagory">Product catagory * :</label>
+                                <label for="p_catagory">Product 2 Code:</label>
                                 <select name="p_catagory" id="p_catagory" class="form-control select2">
-                                  <option disabled selected>Select a catagory</option>
+                                  <option disabled selected>Select Product 2 Code</option>
                                   <?php 
                                     $all_catgory = $obj->all('catagory');
                                     foreach ($all_catgory as $catagory) {
@@ -74,17 +80,14 @@
                             </div>
                           
                          
-                         <div class="col-md-6">
+                  <div class="col-md-6">
                              <div class="form-group">
-                            <label for="product_source">Product source * :</label>
-                            <select name="product_source" id="product_source" class="form-control select2">
-                              <option value="factory">Factory</option>
-                              <option value="buy">Buying</option>
-                            </select>
+                            <label for="product_source">Product 3 Code :</label>
+                      <input type="text" class="form-control" id="product_source" placeholder="Product 3 Code" name="product_source">
                            </div>
-                         </div>
                        </div>
-<div class="row">
+                       </div>
+                   <div class="row">
                           <div class="col-md-6">
                              <div class="form-group">
                             <label for="sku">SKU :</label>
