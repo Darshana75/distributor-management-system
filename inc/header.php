@@ -65,6 +65,22 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
       font-size: 14px; /* even smaller for phones */
     }
   }
+
+  
+  /* Ensure datepicker calendar appears above all other components */
+  .datepicker,
+  .datepicker-dropdown {
+    z-index: 9999 !important;
+  }
+
+  /* Prevent clipping from parent containers */
+  .content-wrapper,
+  .container-fluid,
+  .card {
+    position: relative;
+    overflow: visible !important;
+  }
+
 </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">

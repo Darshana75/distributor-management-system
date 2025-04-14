@@ -10,7 +10,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">new sell</li>
+              <li class="breadcrumb-item active">New Sell</li>
             </ol>
             </div><!-- /.col -->
             </div><!-- /.row -->
@@ -23,9 +23,9 @@
 
               <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title"><b>Make a sell here</b></h3>
+                    <h3 class="card-title"><b>Make a Sell here</b></h3>
 
-                            <button type="button" class="btn btn-primary btn-sm float-right rounded-0" data-toggle="modal" data-target=".myModal"><i class="fas fa-plus"></i> customer</button>
+                            <button type="button" class="btn btn-primary btn-sm float-right rounded-0" data-toggle="modal" data-target=".myModal"><i class="fas fa-plus"></i> Customer</button>
                           
                 </div>
                 <div class="card-body">
@@ -35,7 +35,7 @@
                    <div class="row">
                      <div class="col-md-6  d-flex justify-content-start">
                             <div class="form-group" style="width: 80%;">
-                      <label for="customer-name">Customer name</label>
+                      <label for="customer-name">Customer Name</label>
                       <select name="customer_name" id="customer_name" class="form-control select2">
                         <option selected disabled>Select a customer</option>
                         <?php 
@@ -52,21 +52,22 @@
                           
                         </div>
                      <div class="col-md-6 col-lg-6">
-                      <label for="orderdate">Order date</label>
+                      <label for="orderdate">Order Date</label>
                        <input type="text" class="form-control datepicker" name="orderdate" id="orderdate" autocomplete="off">
                      </div>
                    </div>
                   </div>
+                  
                  <div class="card p-4" style="background: #f1eaea40">
                     <table>
                       <thead>
                         <th>#</th>
                         <th>Product</th>
-                        <th>Total qunatity</th>
+                        <th>Total Qunatity</th>
                         <th>Price</th>
-                        <th>order qunatity</th>
+                        <th>Order Qunatity</th>
                         <th>Total Price</th>
-                        <th>Product name</th>
+                        <th>Product Name</th>
                         <th>Action</th>
                       </thead>
                     <tbody id="invoiceItem">
