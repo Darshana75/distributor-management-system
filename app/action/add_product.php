@@ -7,7 +7,7 @@
 		// $product_code = "P".time();  (Auto generate product code)
 		$product_code = $_POST['product_id'];
 		// $product_code = $_POST['product_id'];	
-		$brand = $_POST['brand'];
+		$brand = $_POST['product_1_code'];
 		$p_catagory = $_POST['p_catagory'];
 		// find catagory name 
 		$p_catagory_name = $obj->find('catagory','id',$p_catagory);
