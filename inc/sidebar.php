@@ -72,13 +72,13 @@
           <li class="nav-item">
             <a href="index.php?page=add_product" class="nav-link <?php echo $actual_link=='add_product'?'active':'';?>">
               <!-- <i class="far fa-circle nav-icon"></i> -->
-              <p>Add product</p>
+              <p>Add Product</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="index.php?page=product_list" class="nav-link <?php echo $actual_link=='product_list'?'active':'';?>">
               <!-- <i class="fas fa-align-justify nav-icon"></i> -->
-              <p>Products list</p>
+              <p>Products List</p>
             </a>
           </li>
          </ul>
@@ -101,19 +101,19 @@
           <li class="nav-item">
             <a href="index.php?page=quick_sell" class="nav-link <?php echo $actual_link=='quick_sell'?'active':'';?>">
               <!-- <i class="far fa-circle nav-icon"></i> -->
-              <p>New sell</p>
+              <p>New Sell</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="index.php?page=sell_list" class="nav-link <?php echo $actual_link=='sell_list'?'active':'';?>">
               <!-- <i class="fas fa-align-justify nav-icon"></i> -->
-              <p>Sell list</p>
+              <p>Sell List</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="index.php?page=sell_return_list" class="nav-link <?php echo $actual_link=='sell_return_list'?'active':'';?>">
               <!-- <i class="fas fa-align-justify nav-icon"></i> -->
-              <p>Sell return list</p>
+              <p>Sell Return List</p>
             </a>
           </li>
         </ul>
@@ -143,7 +143,7 @@
           <li class="nav-item">
             <a href="index.php?page=staff_list" class="nav-link <?php echo $actual_link=='staff_list'?'active':'';?>">
              
-              <p>Staff list</p>
+              <p>Staff List</p>
             </a>
           </li>
         </ul>

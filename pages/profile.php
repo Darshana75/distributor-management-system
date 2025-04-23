@@ -4,7 +4,7 @@
           <section class="content mt-5">
             <div class="container-fluid">
              <div class="card-header">
-                <h3 class="card-title mt-3">Update passowrd</h3>
+                <h3 class="card-title mt-3">Update Passowrd</h3>
               </div>
               <!-- /.card-header -->
                <div class="row">
@@ -21,16 +21,16 @@
                               
                                <input type="text" hidden name="user_id" value="<?=$login_user?>">
                              <div class="form-group">
-                                <label for="password">new password</label>
+                                <label for="password">New Password</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="New password">
                               </div>
                               <div class="form-group">
-                                <label for="c_password">Confirm password</label>
+                                <label for="c_password">Confirm Password</label>
                                 <input type="password" class="form-control" id="c_password" name="c_password" placeholder="Confirm password">
                               </div>
                             
                                 <div class="form-group">
-                                  <button type="submit" class="btn btn-primary btn-block mt-4 rounded-0">Update user</button>
+                                  <button type="submit" class="btn btn-primary btn-block mt-4 rounded-0">Update User</button>
                                 </div>
                                   </form>
                             <?php 
