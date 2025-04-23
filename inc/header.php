@@ -130,10 +130,10 @@ $actual_link = explode('=', "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
             <i class="material-symbols-outlined">person</i> Profile
           </a>
 
-          <a href="index.php?page=profile" class="dropdown-item p-1">
+      <!--   <a href="index.php?page=profile" class="dropdown-item p-1">
             <i class="material-symbols-outlined">
             stacked_inbox</i>Inbox
-          </a>
+          </a> -->
 
           <a href="app/action/logout.php" class="dropdown-item pic p-1">
             <i class="material-symbols-outlined" >logout</i> Logout
