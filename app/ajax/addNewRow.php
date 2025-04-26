@@ -5,7 +5,7 @@ require_once '../init.php';
 			<tr>
 				<td><b class="si_number">1</b></td>
                       <td><select class="form-control form-control-sm select2 pid" id="product_name" name="pid[]">
-                        <option selected disabled>Select a prduct</option>
+                        <option selected disabled>Select a Product</option>
                         <?php 
                           $all_produdct_data = $obj->all('products');
                           foreach ($all_produdct_data as $produdct_data) {

@@ -12,9 +12,17 @@
 		$total_quantity = $_POST['total_quantity'];
 		$orderQuantity = $_POST['orderQuantity'];
 		$price = $_POST['price'];
-		$totalPrice = $_POST['totalPrice'];
+		
+		$totalPrice = []; // Initialize an empty array to store individual total prices.
+
+foreach ($orderQuantity as $key => $quantity) {
+    $productPrice = floatval($price[$key]); // Get the price for the current product
+    $totalPrice[$key] = $productPrice * $quantity; // Calculate the total for this product
+}
+
 		$pro_name = $_POST['pro_name'];
 		$pid = $_POST['pid'];
+	
 
 		$subtotal = $_POST['subtotal'];
 		$discount = $_POST['s_discount_amount'];
@@ -27,3 +35,4 @@
 		echo $result = $obj->storeCustomerOrderInvoice($invoice_number,$customer_name ,$orderdate,$find_customer_name,$total_quantity,$orderQuantity,$price,$totalPrice,$pro_name,$pid,$subtotal,$discount,$prev_due,$netTotal,$paidBill,$dueBill,$payMethode );
 	}
  ?>
+ 

@@ -30,6 +30,7 @@ $(document).on('change', '#p_product_name', function(event) {
 
  }
 
+ 
  $(document).on('keyup', '#p_pn_quantity', function(event) {
  	event.preventDefault();
  	/* Act on the event */

@@ -37,7 +37,7 @@
                             <div class="form-group" style="width: 80%;">
                       <label for="customer-name">Customer Name</label>
                       <select name="customer_name" id="customer_name" class="form-control select2">
-                        <option selected disabled>Select a customer</option>
+                        <option selected disabled>Select a Customer</option>
                         <?php 
                           $all_customer = $obj->all('member');
 
@@ -114,7 +114,7 @@
                       <div class="form-group">
                        <div class="row">
                          <div class="col-md-3">
-                           <label for="prev_due">previous total due</label>
+                           <label for="prev_due">Previous Total Due</label>
                          </div>
                          <div class="col-md-8">
                           <input type="number" class="form-control form-control-sm" name="prev_due" id="prev_due">
@@ -134,7 +134,7 @@
                       <div class="form-group">
                         <div class="row">
                           <div class="col-md-3">
-                            <label for="paidBill">Paid bill</label>
+                            <label for="paidBill">Paid Bill</label>
                           </div>
                           <div class="col-md-8">
                          <input type="number" class="form-control form-control-sm" name="paidBill" id="paidBill">
@@ -144,7 +144,7 @@
                       <div class="form-group">
                        <div class="row">
                          <div class="col-md-3">
-                           <label for="dueBill">Due bill</label>
+                           <label for="dueBill">Due Bill</label>
                          </div>
                          <div class="col-md-8">
                            <input type="text" class="form-control form-control-sm" name="dueBill" id="dueBill">
@@ -172,7 +172,7 @@
                        </div>
                      </div>
                      <div class="form-group text-center">
-                       <button type="submit" class="btn btn-success btn-block" id="sellBtn">Make sell</button>
+                       <button type="submit" class="btn btn-success btn-block" id="sellBtn">Make Sell</button>
                      </div>
                     </div>
                   </div>
