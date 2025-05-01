@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 customer" id="customer" style="">
+              <div class="col-md-5 customer" id="customer">
               	<div class="form-group">
               		<label>Select customer</label>
               		<select name="customer" id="customer" class="form-control">
