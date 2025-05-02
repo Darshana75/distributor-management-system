@@ -79,7 +79,6 @@ foreach($empRecords as $row){
 
             <a href="index.php?page=edit_sell&&edit_id='.$row["id"].'"  class="btn btn-secondary btn-sm rounded-0" type="button"><i class="fas fa-edit"></i></a>
             
-             <a href="index.php?page=sell_pay&&id='.$row['id'].'" class="dropdown-item" type="button">Pay now</a>
           </div>
         </div>
       ',

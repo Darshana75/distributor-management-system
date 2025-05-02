@@ -105,16 +105,16 @@
                         <thead>
                           <tr>
                             <th>Invoice no</th>
-                            <th>customer</th>
-                            <th>order-date</th>
-                            <th>sub total</th>
-                            <th>Previous due</th>
-                            <th>Net total</th>
-                            <th>paid </th>
-                            <th>due</th>
-                            <th>status</th>
-                            <th>payment type</th>
-                            <th>action</th>
+                            <th>Customer</th>
+                            <th>Order-Date</th>
+                            <th>Sub Total</th>
+                            <th>Previous Due</th>
+                            <th>Net Total</th>
+                            <th>Paid </th>
+                            <th>Due</th>
+                            <th>Status</th>
+                            <th>Payment Type</th>
+                            <th>Action</th>
                           </tr>
                         </thead>
                         

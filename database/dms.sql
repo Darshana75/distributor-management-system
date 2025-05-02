@@ -157,6 +157,7 @@ ADD PRIMARY KEY (`id`);
 INSERT INTO `invoice` (`id`, `invoice_number`, `customer_id`, `customer_name`, `order_date`, `sub_total`, `discount`, `pre_cus_due`, `net_total`, `paid_amount`, `due_amount`, `payment_type`, `return_status`, `last_update`) VALUES
 (1, 'S1689942866', 1, 'Nilesh Pandit', '2023-07-28', 9000.00, 0.00, 0.00, 9000.00, 9000.00, 0.00, 'Bank Transfer', 'no', NULL),
 (2, 'S1689943248', 1, 'Nilesh Pandit', '2023-07-27', 10000.00, 0.00, 0.00, 10000.00, 10000.00, 0.00, 'Debit Card', 'no', NULL);
+(3, 'S1745417779', 1, 'Ksun Dhanajaya', '2025-04-21', 35.00, 0.00, 0.00, 5000.00, 60.00, 0.00, '60', 'no', NULL);  
 
 -- --------------------------------------------------------
 
