@@ -4,28 +4,28 @@ A comprehensive web-based system for managing sales, purchases, inventory, retur
 
 ## 📦 Features
 
-#Sales Management
+### Sales Management
 Quick sell and regular sell options
 View, edit, return, and invoice selling
 Track due amounts, discounts, and payment types
 
-#Purchase Management
+### Purchase Management
 Add product purchases with pricing and discounts
 Supplier due tracking and refund options
 
-#Product and Inventory
+### Product and Inventory
 Manage product categories, brands, and stock levels
 View product lists with quantities and prices
 
-#Customer & Supplier Management
+### Customer & Supplier Management
 Maintain customer and supplier records
 View balance reports for both
 
-#Expense Management
+### Expense Management
 Add and categorize business expenses
 Track expense reports
 
-#Reports
+### Reports
 Sales and return reports
 Balance reports for customers and suppliers
 
@@ -37,10 +37,10 @@ PDF Generation: TCPDF
 
 ## ▶️ How to Run
 
-#Requirements:
+### Requirements:
 XAMPP/LAMP/WAMP (Apache, MySQL, PHP 7.x or 8.x)
 
-#Setup Steps:
+### Setup Steps:
 1.Place the project folder inside htdocs/ (XAMPP) or equivalent.
 2.Import the SQL database (if available).
 3.Update DB credentials in init.php.
