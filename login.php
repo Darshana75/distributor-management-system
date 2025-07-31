@@ -22,7 +22,7 @@ if ($Ouser->is_login() != false) {
 			<div class="authincation-content">
 			
 			<a class="login-logo d-block mb-4" href="">
-				<img src="dist/img/Cargills_Logo_02.png" alt="" height="110px" width="auto" >
+				<img src="dist/img/log.png" alt="" height="110px" width="auto" >
 			</a> 
 			<div class="mb-4">
 				

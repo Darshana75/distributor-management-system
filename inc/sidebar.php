@@ -3,7 +3,7 @@
 
 <!-- Brand Logo -->
 <a href="http://localhost/distributor-management-system/index.php" class="brand-link">
-  <img src="dist/img/Cargills_Logo_01.png" alt="logo" class="brand-image">
+  <img src="dist/img/sidebar.png" alt="logo" class="brand-image">
 </a>
 
 <!-- Sidebar -->
